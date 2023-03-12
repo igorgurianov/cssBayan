@@ -1,0 +1,17 @@
+.meme__list {
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* .meme__list:hover .meme__title {
+    color: gray;
+} */
+
+
+.meme__list:hover .meme__cross-button {
+    display: block;
+}

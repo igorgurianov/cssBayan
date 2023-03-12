@@ -1,0 +1,46 @@
+.meme__item {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.meme__item:hover .meme__img {
+    animation-name: showImage;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.meme__item:hover .meme__wrapper {
+    animation-name: showImage;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.meme__item:hover .meme__cross-button {
+    transform: rotate(45deg);
+}
+
+.meme__item:hover {
+    cursor: pointer;
+}
+
+.meme__item:hover .meme__checkbox {
+    display: block;
+}
+
+
+@keyframes showImage {
+    0% {
+        opacity: 0;
+        /* transform: translateY(-100%); */
+        width: 0%;
+        height: 0%;
+    }
+
+    100% {
+        opacity: 1;
+        /* transform: translateY(0%); */
+        width: 100%;
+        height: 100%;
+    }
+}

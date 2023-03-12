@@ -1,0 +1,12 @@
+.meme__img {
+    display: block;
+    object-fit: contain;
+    max-height: 50vh;
+    width: 0;
+}
+
+
+
+/* .showImage {
+    animation: showImage 2s;
+} */

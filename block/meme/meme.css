@@ -1,0 +1,22 @@
+.meme {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* @media screen and (max-width:767px) {
+    .meme {
+        padding: 0 20px;
+    }
+
+} */
+
+@media screen and (max-width:320px) {
+    .meme {
+        padding: 0 10px;
+    }
+}
+
+.meme:hover {
+    background-color: antiquewhite;
+}

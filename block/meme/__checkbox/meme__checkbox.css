@@ -1,0 +1,15 @@
+.meme__checkbox {
+    display: none;
+    height: 50px;
+    width: 50px;
+}
+
+.meme__checkbox:checked {
+    display: block;
+}
+
+.meme__checkbox:checked+.meme__img {
+    animation-name: none;
+    width: 100%;
+    height: 100%;
+}
