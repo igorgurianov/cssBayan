@@ -1,0 +1,29 @@
+@media (hover: hover) {
+    .meme__item:hover .meme__wrapper {
+        animation-name: showImage;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .meme__item:hover .meme__cross-button {
+        transform: rotate(45deg);
+    }
+
+    .meme__item:hover>label {
+        cursor: pointer;
+    }
+}
+
+@keyframes showImage {
+    0% {
+        opacity: 0;
+        height: 0%;
+        width: 0;
+    }
+
+    100% {
+        opacity: 1;
+        height: 100%;
+        width: 100%;
+    }
+}

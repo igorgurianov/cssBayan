@@ -1,0 +1,30 @@
+.meme__input {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.meme__input:checked~.meme__topline {}
+
+/* Выключаем анимацию для мема, если кликаем на тот, на котором она уже отработала в рамках ховер эффекта */
+@media (min-width: 820px) {
+    .meme__input:checked~.meme__wrapper {
+        animation-name: none;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+/* для мобильных устройств анимация только по :checked а не по ховеру */
+@media (max-width: 820px) {
+    .meme__input:checked~.meme__wrapper {
+        animation-name: showImage;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+}
+
+/* .meme__input:checked~.meme__img {
+    display: block;
+} */

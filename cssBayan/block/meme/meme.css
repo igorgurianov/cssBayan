@@ -17,6 +17,8 @@
     }
 }
 
-.meme:hover {
-    background-color: antiquewhite;
+@media (hover: hover) {
+    .meme:hover {
+        background-color: antiquewhite;
+    }
 }

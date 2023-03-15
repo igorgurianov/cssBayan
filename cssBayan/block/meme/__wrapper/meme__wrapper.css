@@ -1,0 +1,20 @@
+.meme__wrapper {
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 0;
+}
+
+/* .meme__wrapper:has(~ .meme__input:checked) {
+    animation-name: none;
+    width: 100%;
+    height: 100%;
+} */
+
+/* .meme__input:checked .meme__wrapper:hover {
+    animation-name: none;
+    width: 100%;
+    height: 100%;
+} */
