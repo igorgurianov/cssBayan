@@ -1,0 +1,17 @@
+.meme__title {
+    margin: 0;
+    font-size: 40px;
+    max-width: 90%;
+}
+
+@media screen and (max-width:1023px) {
+    .meme__title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .meme__title {
+        font-size: 20px;
+    }
+}

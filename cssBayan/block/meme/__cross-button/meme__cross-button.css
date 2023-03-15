@@ -1,0 +1,39 @@
+.meme__cross-button {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    background-image: url('../../../images/cross-circle-svgrepo-com.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+    transition: transform .5s;
+}
+
+/* Если есть поддержка ховера, то кнопка будет по дефолту скрыта и показываться только по ховеру */
+/* Если нет поддержки ховера, то кнопка будет display: block по дефолту (правилу выше) */
+@media (hover: hover) {
+    .meme__cross-button {
+        display: none;
+    }
+
+    .meme:hover .meme__cross-button {
+        display: block;
+    }
+}
+
+/*Без (hover: hover) т.к. размер в любом случае должен быть таким, а дисплей регулируется выше*/
+@media (max-width:820px) {
+    .meme__cross-button {
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+}
+
+.meme__input:checked~.meme__topline .meme__cross-button {
+    transform: rotate(45deg);
+}
